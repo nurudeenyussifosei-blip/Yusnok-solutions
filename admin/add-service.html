@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Service - Yusnok Solutions Admin</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="../images/logo/logo.png" alt="Yusnok Solutions Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="admin-home.html">Home</a></li>
+                <li><a href="add-service.html" class="active">Add Service</a></li>
+                <li><a href="admin-gallery.html">Gallery</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="booked-services.html">Booked Services</a></li>
+                <li><a href="job-applications.html">Applications</a></li>
+                <li><a href="admin-login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-header">
+            <h1>Manage Services</h1>
+            <p>The administrator can add, update, and delete services from this page.</p>
+        </div>
+
+        <div class="form-card">
+    <h2>Add New Service</h2>
+
+    <form class="admin-form">
+        <div class="service-form-layout">
+
+            <div class="left-fields">
+                <div class="form-group">
+                    <label for="service-title">Service Title</label>
+                    <input type="text" id="service-title" placeholder="Enter service title">
+                </div>
+
+                <div class="form-group">
+                    <label for="service-image">Service Image</label>
+                    <input type="file" id="service-image">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Add Service</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </div>
+
+            <div class="right-fields">
+                <div class="form-group">
+                    <label for="service-description">Description</label>
+                    <textarea id="service-description" placeholder="Enter service description"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+        <div class="table-card">
+            <h2>Existing Services</h2>
+            <table>
+                <tr>
+                    <th>Service Title</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Delivery Services</td>
+                    <td>service4.jpg</td>
+                    <td>Transportation of goods safely and efficiently.</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Business Consultancy</td>
+                    <td>gallery3.jpg</td>
+                    <td>Professional advice to improve decisions and operations.</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Project Support</td>
+                    <td>project.jpg</td>
+                    <td>Planning, coordination, and project support services.</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Customer Solutions</td>
+                    <td>customer.jpg</td>
+                    <td>Tailored practical solutions for clients and businesses.</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Yusnok Solutions - Admin Panel</p>
+    <p>Administrative Access for Website Management</p>
+    <p>Email: admin@yusnoksolutions.com | Phone: +233 544 899 973 / +233 240 439 899</p>
+    <p>Location: Accra, Ghana</p>
+</footer>
+
+</body>
+</html>

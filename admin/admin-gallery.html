@@ -1,0 +1,118 @@
+u<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Gallery - Yusnok Solutions</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="../images/logo/logo.png" alt="Yusnok Solutions Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="admin-home.html">Home</a></li>
+                <li><a href="add-service.html">Add Service</a></li>
+                <li><a href="admin-gallery.html" class="active">Gallery</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="booked-services.html">Booked Services</a></li>
+                <li><a href="job-applications.html">Applications</a></li>
+                <li><a href="admin-login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-header">
+            <h1>Manage Gallery</h1>
+            <p>The administrator can upload, view, and delete gallery images from this page.</p>
+        </div>
+
+        <div class="form-card">
+            <h2>Add New Gallery Image</h2>
+
+            <form class="admin-form">
+                <div class="service-form-layout">
+
+                    <div class="left-fields">
+                        <div class="form-group">
+                            <label for="gallery-title">Image Title</label>
+                            <input type="text" id="gallery-title" placeholder="Enter image title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gallery-image">Upload Image</label>
+                            <input type="file" id="gallery-image">
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit">Upload Image</button>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </div>
+
+                    <div class="right-fields">
+                        <div class="form-group">
+                            <label for="gallery-description">Description</label>
+                            <textarea id="gallery-description" placeholder="Enter image description"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="table-card">
+            <h2>Existing Gallery Images</h2>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Warehouse Operations</td>
+                    <td>service2.jpg</td>
+                    <td>Image showing warehouse storage and logistics operations.</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Business Meeting</td>
+                    <td>bussiness cons.jpg</td>
+                    <td>Professional meeting with clients and staff.</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Team Brainstorming</td>
+                    <td>team1.jpg</td>
+                    <td>Team planning and idea sharing session.</td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Project Planning</td>
+                    <td>team2.jpg</td>
+                    <td>Planning and coordination discussion for projects.</td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Yusnok Solutions - Admin Panel</p>
+    <p>Administrative Access for Website Management</p>
+    <p>Email: admin@yusnoksolutions.com | Phone: +233 544 899 973 / +233 240 439 899</p>
+    <p>Location: Accra, Ghana</p>
+</footer>
+
+</body>
+</html>

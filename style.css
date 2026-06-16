@@ -1,0 +1,890 @@
+/* 
+   YUSNOK SOLUTIONS WEBSITE STYLESHEET
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   GENERAL RESET AND BODY STYLE*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/*MAIN CONTAINER*/
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*HEADER, LOGO, AND NAVIGATION*/
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    height: 45px;
+    max-width: 300px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #e6e6e6;
+}
+
+nav {
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #102b52;
+    padding: 10px 16px;
+    border-radius: 5px;
+    display:inline-block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #f4c542;
+    color: #102b52;
+}
+
+
+/*HERO AND PAGE BANNER*/
+
+.hero {
+    background-image: url("images/backgrnd-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 10px;
+    color: #f4c542;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    color:rgba(245, 245, 245, 0.995);
+    max-width: 800px;
+    margin: auto; 
+    padding: 15px 20px;
+    
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-banner {
+    background-color: #102b52;
+    background-image: url("images/backgrnd-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.page-banner h1 {
+    font-size: 42px;
+    color: #f4c542;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.page-banner p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*GENERAL SECTIONS*/
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    font-size: 17px;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-header h1 {
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #555;
+    max-width: 600px;
+}
+
+/* HOME PAGE SERVICE BOXES
+   The smallservice cards on the home page.*/
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-box {
+    background-color: white;
+    width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+.service-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-box h3 {
+    color: #0b1f3a;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.service-box p {
+    margin: 0 15px 20px 15px;
+    font-size: 15px;
+}
+
+/*SERVICES PAGE LARGE CARDS
+   These are the bigger cards on services.html.*/
+
+.service-grid-large {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-card-large {
+    background-color: white;
+    width: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.service-card-large img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card-content {
+    padding: 22px;
+}
+
+.service-card-content h3 {
+    color: #0b1f3a;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.service-card-content p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.service-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0b1f3a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.service-btn:hover {
+    background-color: #f4c542;
+    color: #0b1f3a;
+}
+
+/*CALL TO ACTION & INFORMATION STRIP
+   These style special message sections.*/
+
+.info-strip {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-strip h2 {
+    color: #0b1f3a;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.info-strip p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.cta {
+    background-color: #f4c542;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    color: #0b1f3a;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #0b1f3a;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: #102b52;
+}
+
+
+/*GALLERY PAGE*/
+
+.gallery-grid-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    color: #0b1f3a;
+    margin: 10px 15px 5px 15px;
+}
+
+.gallery-item p {
+    font-size: 13px;
+    color: #444;
+    margin: 0 15px 15px 15px;
+    line-height: 1.5;
+}
+
+
+/*CONTACT PAGE*/
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    
+}
+
+.contact-box,
+.form-box {
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-box h3,
+.form-box h3 {
+    color: #0b1f3a;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+/*GENERAL FORM STYLES
+   These affect labels, inputs, textareas, selects, and buttons.*/
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0b1f3a;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select,
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.form-buttons input,
+.form-buttons button,
+.button-group button,
+table button {
+    background-color: #102b52;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons input:hover,
+.form-buttons button:hover,
+.button-group button:hover,
+table button:hover {
+    background-color: #f4c542;
+    color: #102b52;
+}
+
+
+/*JOB APPLICATION PAGE
+   This controls the job application form, radio buttons, and checkboxes.*/
+
+.job-form-box {
+    background-color: white;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.form-section-title {
+    font-size: 24px;
+    color: #0b1f3a;
+    margin: 25px 0 15px 0;
+    border-bottom: 2px solid #f4c542;
+    padding-bottom: 8px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    color: #222;
+}
+
+.job-note {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 30px auto;
+    font-size: 17px;
+}
+
+
+/*LOGIN PAGES*/
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.client-login-banner {
+    background-image: none;
+    background-color: #102b52;
+}
+
+.login-box {
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 35px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h2 {
+    color: #0b1f3a;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.login-links {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.login-links a {
+    color: #0b1f3a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-links a:hover {
+    color: #f4c542;
+}
+
+/*ADMIN SECTION*/
+.admin-login-section{
+    background-image: url("images/admin-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    position:relative;
+}
+.admin-login-section::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+.admin-login-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.admin-badge {
+    display: inline-block;
+    background-color: #f4c542;
+    color: #0b1f3a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.admin-note {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    font-size: 16px;
+    color: #102b52;
+    backdrop-filter: blur(10px);
+    
+}
+
+.admin-hero {
+    background-image: url("images/admin-dash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    position: relative;
+}
+
+.admin-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.admin-hero .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.admin-banner {
+    background-image: none;
+    background-color: #102b52;}
+
+/* ABOUT PAGE TEAM BOXES*/
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-box {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.team-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.team-box h3 {
+    color: #0b1f3a;
+    margin: 15px 0 10px 0;
+}
+
+.team-box p {
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+/* ADMIN FORM AND TABLE CARDS
+   controls admin forms and tables like Add Service, Gallery, etc.*/
+
+.form-card,
+.table-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+.form-card h2,
+.table-card h2 {
+    margin-bottom: 20px;
+    color: #0b2a52;
+    font-size: 24px;
+}
+.table-card td:hover {
+   color : blue;
+}
+    
+
+
+.admin-form {
+    width: 100%;
+}
+
+.admin-form .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.admin-form .form-group {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0b2a52;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="file"],
+.admin-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.admin-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.admin-hero {
+    background-image: url("images/admin-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    position: relative;
+}
+
+.service-form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.left-fields,
+.right-fields {
+    width: 100%;
+}
+
+.left-fields .form-group {
+    margin-bottom: 25px;
+}
+
+.right-fields textarea {
+    min-height: 220px;
+}
+
+
+/*TABLE STYLES*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table th {
+    background: #102b52;
+    color: white;
+}
+
+/*ADMIN DASHBOARD CARDS*/
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-left: 8px solid #f4c542;
+    border-right: 8px solid #f4c542;
+    box-shadow: 9 6px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card h3 {
+    color: #0b1f3a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+
+/* RESPONSIVE DESIGN
+   Allows this website fit tablets and phones */
+
+@media (max-width: 992px) {
+    .gallery-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .service-box,
+    .service-card-large,
+    .contact-box,
+    .form-box,
+    .login-box,
+    .team-box {
+        width: 100%;
+    }
+
+    .service-form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .right-fields textarea {
+        min-height: 150px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid-new {
+        grid-template-columns: 1fr;
+    }
+}
